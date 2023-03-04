@@ -12,6 +12,7 @@ const inter = Inter({
 
 import { Hero, Navbar, Reasons, Generated } from "@/components";
 import Footer from "@/components/Footer";
+import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
   const [promptValue, setPromptValue] = useState("");
@@ -62,14 +63,16 @@ export default function Home() {
           loader={loader}
         />
 
-        {generated.length !== 0 && (
-          <Generated
-            promptValue={promptValue}
-            generated={generated}
-            setGenerated={setGenerated}
-            copingText={copingText}
-          />
-        )}
+        <AnimatePresence mode="wait" initial={false}>
+          {generated.length !== 0 && (
+            <Generated
+              promptValue={promptValue}
+              generated={generated}
+              setGenerated={setGenerated}
+              copingText={copingText}
+            />
+          )}
+        </AnimatePresence>
 
         <Reasons />
         <Footer />
