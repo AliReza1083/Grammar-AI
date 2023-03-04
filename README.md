@@ -37,6 +37,48 @@ AI websites use advanced algorithms to identify errors, which can be more accura
 
 For people with disabilities or language barriers, using a grammar AI website can help them communicate more effectively by identifying and correcting errors that may be difficult to spot otherwise.
 
+## Getting Started
+
+To use this project, you'll need an OpenAI API key. If you don't already have one, head over to the [OpenAI API website](https://beta.openai.com/signup/) to sign up and get an API key.
+
+Once you have your API key, follow these steps to get started with this project:
+
+1. Fork this repository by clicking on the "Fork" button in the top-right corner of this page.
+2. Clone your forked repository to your local machine using the following command:
+
+```bash
+git clone git@github.com:your-username/Grammar-AI.git
+```
+
+3. Navigate to the project directory:
+
+```bash
+cd Grammar-AI
+```
+
+4. Create a new `.env` file in the root directory of the project.
+5. Open the `.env` file in a text editor and add the following line, replacing `YOUR_API_KEY_HERE` with your actual OpenAI API key:
+
+```bash
+NEXT_PUBLIC_APIKEY=YOUR_API_KEY_HERE
+```
+
+6. Install the project dependencies using NPM:
+
+```bash
+npm install
+```
+
+7. Start the local server using NPM:
+
+```bash
+npm run dev
+```
+
+6. Now you can access the project at `http://localhost:3000` in your web browser.
+
+That's it! You should now be able to start using this project locally on your machine. If you encounter any issues, feel free to open an issue in the GitHub repository or contact the project maintainer. Happy coding!
+
 ## 🙏 Support
 
 Don't forget to leave a star ⭐️
